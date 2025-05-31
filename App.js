@@ -5,7 +5,7 @@ import Usestatehook from "./src/Hooks/Usestatehook";
 const App=()=>{
     return(
         <>
-        {/* <Nohook/> */}
+        <Nohook/>
         <Usestatehook/>
         </>
     )
