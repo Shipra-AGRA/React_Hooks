@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useLayoutEffect, useState } from "react"
 import Component1 from "./components/component1"
 import Component2 from "./components/component2"
 import DataFetcher from "./components/DataFetcher"
@@ -16,6 +16,10 @@ const HookExample1 = () => {
         console.log("useEffect Called")
     },[count])
 
+    //useLayoutEffect is called before the browser repaints the screen
+    useLayoutEffect(()=>{
+        console.log("useLayout called")
+    },[])
 
     return (
         <div>
