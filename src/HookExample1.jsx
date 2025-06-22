@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import Component1 from "./components/component1"
 import Component2 from "./components/component2"
+import DataFetcher from "./components/DataFetcher"
 
 const HookExample1 = () => {
     const [count, setCount] = useState(0)
@@ -34,6 +35,9 @@ const HookExample1 = () => {
 
             {toggleBtn && <Component2/>}
             <button onClick={()=>{setToggleBtn(!toggleBtn)}}>toggleBtn</button>
+
+
+            <DataFetcher/>
         </div>
     )
 }
