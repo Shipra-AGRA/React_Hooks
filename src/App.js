@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
 import HookExample1 from "./HookExample1";
+import HookExample2 from "./HookExample2";
 
 const App=()=>{
 return(
-    <HookExample1/>
+    <>
+        {/* <HookExample1/> */}
+        <HookExample2/>
+    </>
 )
 }
 
