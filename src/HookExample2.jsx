@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react"
+import ThemeSwitcher from "./components/ThemeSwitcher"
 
 const HookExample2=()=>{
 
@@ -29,6 +30,9 @@ return(
 
         <p>count using ref: {count2.current}</p>
         <button onClick={()=>{count2.current+=1}}>increment using ref</button>
+
+        <br/><br/>
+        <ThemeSwitcher/>
     </div>
 )
 }
